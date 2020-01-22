@@ -34,5 +34,6 @@ In every case, the tool reports any line found in either file that both ISN'T a 
     ```
 
 # Installation
-If installing this utility from a .tar.gz, a wheel, or other similar format through pip, be sure to enable the --user option. Otherwise, you may not be able to execute the primary functions of this package from the commandline directly. 
-Also be aware of any warnings pip issues when installing with the --user option. In particular, if you see `WARNING: The scripts inicompare.exe and inidump.exe are installed in '/some/path/on/your/machine' which is not on PATH.`, you'll need to add that directory to your PATH in order to use this package effectively.
+Prebuilt wheels of this project are available under the dist directory. Alternatively, build and install your own.
+
+Once this package is installed to your machine, you will be able to use its commands in the shell from any location.
