@@ -1,8 +1,8 @@
-# `inicompare`
-A tool to compare and dump the contents of producer install.ini files.
+# `des-ini-utils`
+A set of tools to compare and dump the contents of producer install.ini files.
 
 # Components
-* `inicompare` - compares two Designer install.ini files, reporting how similar or different they are. This tool can detect whether the files are totally identical, whether their functional content (everything except comments) is identical (but the rest isn't), or whether the content of the files is different. When functional content is different, the differences between the two files are reported.
+* `inicompare` - compares two Designer install.ini files, reporting how similar or different they are. This tool can detect whether the files are totally identical (in terms of raw content), whether their functional content (everything except comments/whitespace) is identical, and whether the functional content of the files is different. When functional content is different, the differences between the two files are reported.
 In every case, the tool reports any line found in either file that both ISN'T a comment, and DOESN'T begin with the prefix "::InstallAPI::SetVirtualText -virtualtext".
 
 * `inidump` - dumps the provided INI file as a JSON file at the path provided. If no path is provided, the file is dumped at the location where this script was called from.
